@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^home?$ home.php
+RewriteRule ^latest-news?$ latest-news.php
+RewriteRule ^latest-news/([0-9]+) latest-news.php?page=$1
+RewriteRule ^content-videos?$ content-videos.php
+RewriteRule ^content-videos/([0-9]+) content-videos.php?page=$1
+RewriteRule ^category/([0-9a-zA-Z]+.*)/([0-9]+)  category.php?category=$1&contents=$2
+RewriteRule ^category/([0-9a-zA-Z]+.*)  category.php?category=$1
+RewriteRule ^read-more/([0-9a-zA-Z]+.*)/([0-9a-zA-Z]+.*)  read-more.php?category=$1&more=$2
